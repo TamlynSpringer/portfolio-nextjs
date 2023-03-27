@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import profileDark from '../../public/profile-d.png';
-import profileLight from '../../public/profile-l.png';
+import profileDark from '../../public/profile-d.svg';
+import profileLight from '../../public/profile-l.svg';
 import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai';
 
 const Intro = ({ darkMode }) => {

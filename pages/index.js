@@ -1,25 +1,16 @@
 import Head from 'next/head';
 import { Inter } from '@next/font/google';
-import {BsFillMoonStarsFill} from 'react-icons/bs'
 import Image from 'next/image';
-import logoDark from '../public/logo-d.svg';
-import logoLight from '../public/logo-l.svg';
-import profileDark from '../public/profile-d.svg';
-import profileLight from '../public/profile-l.svg';
-import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai';
 import project1 from '../public/project1.png';
 import project2 from '../public/project2.png';
 import project3 from '../public/project3.png';
 import project4 from '../public/project4.png';
 import project5 from '../public/project5.png';
 import project6 from '../public/project6.png';
-import project7 from '../public/project7.png';
-import project8 from '../public/project8.png';
-import project9 from '../public/project9.png';
-import project10 from '../public/project10.png';
 import { useState } from 'react';
 import Link from 'next/link';
 import Nav from './components/Nav';
+import Intro from './components/Intro';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -35,37 +26,7 @@ export default function Home() {
       </Head>
       <main className='min-h-screen bg-zinc-100 md:px-20 lg:px:40 dark:bg-zinc-800'>
         <Nav darkMode={darkMode} setDarkMode={setDarkMode} />
-          <section className='flex flex-col gap-10 lg:flex-row lg:flex-wrap'>
-            <div className='py-4 basis-1/3 flex-1'>
-              <div className='text-center p-10 basis-1/3 flex-1'>
-                <h2 className='text-5xl py-4 text-emerald-900 font-medium md:text-6xl dark:text-emerald-800'>Tamlyn Springer</h2>
-                <h3 className='text-2xl py-2 md:text-3xl dark:text-emerald-100'>Full-stack JavaScript & TypeScript developer based in Stockholm, Sweden</h3>
-              </div>
-              <div className='text-5xl flex justify-center gap-16 py-3 text-zinc-700  dark:text-zinc-200'>
-                <a href='https://github.com/TamlynSpringer' target='blank'><AiFillGithub /></a>
-                <a href='https://www.linkedin.com/in/tamlyn-springer-v/' target='blank'><AiFillLinkedin /></a>                
-              </div>
-            </div>
-            <div className='relative py-4 basis-1/3 flex-1'>
-            {darkMode === true ? (
-              <Image
-                className='mx-auto'
-                src={profileDark}
-                alt="Dark profile"
-                width={500}
-                height={500}
-              />
-            ) : (
-              <Image
-                className='mx-auto'
-                src={profileLight}
-                alt="Light profile"
-                width={500}
-                height={500}
-              />
-            )}
-            </div>
-          </section>
+        <Intro darkMode={darkMode} />
           <section>
             <h3 className='text-4xl font-medium py-6 text-center dark:text-emerald-100'>Projects</h3>
             <div className='flex flex-col gap-10 lg:flex-row lg:flex-wrap'>
