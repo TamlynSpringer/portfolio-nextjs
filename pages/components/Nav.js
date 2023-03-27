@@ -3,24 +3,29 @@ import Image from 'next/image';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import logoDark from '../../public/logo-d.svg';
 import logoLight from '../../public/logo-l.svg';
+import Link from 'next/link';
 
 const Nav = ({ darkMode, setDarkMode }) => {
   return (
     <nav className='py-4 mb-12 mx-10 flex justify-around'>
     {darkMode === true ? (
-      <Image
-        src={logoLight}
-        alt="Light Logo"
-        width={200}
-        height={120}
-      />
+      <Link href='/'>
+        <Image
+          src={logoLight}
+          alt="Light Logo"
+          width={200}
+          height={120}
+        />
+      </Link>
     ) : (
-      <Image
-        src={logoDark}
-        alt="Dark Logo"
-        width={200}
-        height={120}
-      />
+      <Link href='/'>
+        <Image
+          src={logoDark}
+          alt="Dark Logo"
+          width={200}
+          height={120}
+        />
+      </Link>
     )}
       <ul className='flex items-center'>
         <li className='cursor-pointer text-2xl text-zinc-900 dark:text-zinc-200'>
