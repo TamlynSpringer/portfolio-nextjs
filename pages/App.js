@@ -4,6 +4,7 @@ import {BsFillMoonStarsFill} from 'react-icons/bs'
 import Image from 'next/image';
 import logoDark from '../public/logo-d.svg';
 import logoLight from '../public/logo-l.svg';
+import cv from '../public/TamlynSpringerCV.pdf';
 import profileDark from '../public/profile-d.svg';
 import profileLight from '../public/profile-l.svg';
 import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai';
@@ -52,7 +53,7 @@ export default function Home() {
             <li className='cursor-pointer text-2xl text-zinc-900 dark:text-zinc-200'>
               <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} />
             </li>
-            <li><a className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white px-4 py-2 font-medium rounded' href='#'>Resume</a></li>
+            <li><a className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white px-4 py-2 font-medium rounded' href={cv}>CV</a></li>
           </ul>
         </nav>
           <section className='flex flex-col gap-10 lg:flex-row lg:flex-wrap'>
