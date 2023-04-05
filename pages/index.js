@@ -13,6 +13,8 @@ import project3 from '../public/project3.png';
 import project4 from '../public/project4.png';
 import project5 from '../public/project5.png';
 import project6 from '../public/project6.png';
+import floralsDark from '../public/florals-d.png';
+import floralsLight from '../public/florals-l.png';
 import Link from 'next/link';
 
 const inter = Inter({ subsets: ['latin'] })
@@ -72,7 +74,34 @@ export default function Home() {
           </div>          
           <h4 className='text-2xl underline font-medium py-6 text-center hover:text-emerald-800 dark:text-emerald-100'><Link href='/projects'>All projects</Link></h4>
         </section>
-        <Background />
+        <h3 className='text-4xl font-medium py-6 text-center dark:text-emerald-100'>Background</h3>
+        <div className='flex flex-col lg:flex-row lg:flex-wrap'>
+          <div>
+          <Background />
+          </div>
+          <div className='relative basis-2/3 flex-1 content-end mt-20'>
+          {darkMode === true ? (
+            <Image
+              className='mx-auto'
+              src={floralsDark}
+              alt="Dark florals"
+              width={800}
+              // height={500}
+            />
+          ) : (
+          <Image
+            className='mx-auto'
+            src={floralsLight}
+            alt="Light florals"
+            width={800}
+            // height={500}
+          />
+          )}
+        </div>
+          {/* <div>
+            <Image href='' alt='Florals' />
+          </div> */}
+        </div>
         <Footer />
       </main>
     </div>
