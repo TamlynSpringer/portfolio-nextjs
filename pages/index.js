@@ -4,7 +4,6 @@ import { useState } from 'react';
 import Nav from './components/Nav';
 import Intro from './components/Intro';
 import Background from './components/Background';
-// import Projects from './projects';
 import Footer from './components/Footer';
 import Image from 'next/image';
 import project1 from '../public/project1.png';
