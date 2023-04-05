@@ -1,5 +1,11 @@
 import Head from 'next/head';
 import { Inter } from '@next/font/google';
+import { useState } from 'react';
+import Nav from './components/Nav';
+import Intro from './components/Intro';
+import Background from './components/Background';
+// import Projects from './projects';
+import Footer from './components/Footer';
 import Image from 'next/image';
 import project1 from '../public/project1.png';
 import project2 from '../public/project2.png';
@@ -7,10 +13,7 @@ import project3 from '../public/project3.png';
 import project4 from '../public/project4.png';
 import project5 from '../public/project5.png';
 import project6 from '../public/project6.png';
-import { useState } from 'react';
 import Link from 'next/link';
-import Nav from './components/Nav';
-import Intro from './components/Intro';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -27,110 +30,51 @@ export default function Home() {
       <main className='min-h-screen bg-zinc-100 md:px-20 lg:px:40 dark:bg-zinc-800'>
         <Nav darkMode={darkMode} setDarkMode={setDarkMode} />
         <Intro darkMode={darkMode} />
-          <section>
-            <h3 className='text-4xl font-medium py-6 text-center dark:text-emerald-100'>Projects</h3>
-            <div className='flex flex-col gap-10 lg:flex-row lg:flex-wrap'>
-              <article className='text-center my-10 shadow-xl rounded-xl bg-zinc-300 basis-1/3 flex-1 dark:bg-zinc-300'>
-                <Image className='relative mx-auto rounded-t-xl object-cover mt-3' src={project1} alt='project-ecom' width={600} height={400} />
-                <h4 className='py-4 text-emerald-900 font-semibold text-2xl'>Full-stack e-commerce site</h4>
-                <p className='text-gray-800 py-4'>ReactJS • React-Bootstrap • NodeJS • MongoDB • Mongoose • Express</p>
-                <p className='text-gray-800 py-4 text-lg'><a className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white px-4 py-2 font-medium rounded' href='https://baltic-store.netlify.app/' target='blank'>Site</a> <a className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white px-4 py-2 font-medium rounded' href='https://github.com/TamlynSpringer/eCommerce_Client' target='blank'>FE code</a> <a className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white px-4 py-2 font-medium rounded' href='https://github.com/TamlynSpringer/eCommerce_Server' target='blank'>BE code</a></p>
-              </article>
-              <article className='text-center my-10 shadow-xl rounded-xl bg-zinc-300 basis-1/3 flex-1 dark:bg-zinc-300'>
-                <Image className='relative mx-auto rounded-t-xl object-cover mt-3' src={project2} alt='project-blog' width={600} height={400} />
-                <h4 className='py-4 text-emerald-900 font-semibold text-2xl'>Facts site</h4>
-                <p className='text-gray-800 py-4'>ReactJS • Typescript • Vite • TailwindCSS</p>
-                <p className='text-gray-800 py-4 text-lg'><a className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white px-4 py-2 font-medium rounded' href='https://planetary-facts-1337.netlify.app/' target='blank'>Site</a> <a className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white px-4 py-2 font-medium rounded' href='https://github.com/TamlynSpringer/planetary-facts-vite' target='blank'>Code</a></p>
-              </article>
-              <article className='text-center my-10 shadow-xl rounded-xl bg-zinc-300 basis-1/3 flex-1 dark:bg-zinc-300'>
-                <Image className='relative mx-auto rounded-t-xl object-cover mt-3' src={project3} alt='project-blog' width={600} height={400} />
-                <h4 className='py-4 text-emerald-900 font-semibold text-2xl'>Full-stack to-do app</h4>
-                <p className='text-gray-800 py-4'>ReactJS • Typescript • NodeJS • Express • MongoDB • Mongoose</p>
-                <p className='text-gray-800 py-4 text-lg'><a className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white px-4 py-2 font-medium rounded' href='https://ts-mern-todo.netlify.app/' target='blank'>Site</a> <a className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white px-4 py-2 font-medium rounded' href='https://github.com/TamlynSpringer/to-do-app-typescript-client' target='blank'>FE Code</a> <a className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white px-4 py-2 font-medium rounded' href='https://github.com/TamlynSpringer/to-do-app-typescript-server' target='blank'>BE Code</a></p>
-              </article>
-              <article className='text-center my-10 shadow-xl rounded-xl bg-zinc-300 basis-1/3 flex-1 dark:bg-zinc-300'>
-                <Image className='relative mx-auto rounded-t-xl mt-3' src={project4} alt='project-gallery' width={600} height={400} />
-                <h4 className='py-4 text-emerald-900 font-semibold text-2xl'>Image gallery & search</h4>
-                <p className='text-gray-800 py-4'>ReactJS • TailwindCSS • Unsplash API • Axios</p>
-                <p className='text-gray-800 py-4 text-lg'><a className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white px-4 py-2 font-medium rounded' href='https://react-image-search-gallery.netlify.app/' target='blank'>Site</a> <a className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white px-4 py-2 font-medium rounded' href='https://github.com/TamlynSpringer/image-gallery' target='blank'>Code</a></p>
-              </article>
-              <article className='text-center my-10 shadow-xl rounded-xl bg-zinc-300 basis-1/3 flex-1 dark:bg-zinc-300'>
-                <Image className='relative mx-auto rounded-t-xl object-cover w-3/4 mt-3' src={project5} alt='project-blog' width={600} height={400} />
-                <h4 className='py-4 text-emerald-900 font-semibold text-2xl'>Goals mobile app</h4>
-                <p className='text-gray-800 py-4'>React Native • Expo</p>
-                <p className='text-gray-800 py-4 text-lg'><a className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white px-4 py-2 font-medium rounded' href='https://github.com/TamlynSpringer/blog-typescript-react' target='blank'>Code</a></p>
-              </article>
-              <article className='text-center my-10 shadow-xl rounded-xl bg-zinc-300 basis-1/3 flex-1 dark:bg-zinc-300'>
-                <Image className='relative mx-auto rounded-t-xl mt-3' src={project6} alt='project-uno' width={600} height={400} />
-                <h4 className='py-4 text-emerald-900 font-semibold text-2xl'>Multi-player card game</h4>
-                <p className='text-gray-800 py-4'>ReactJS • SocketIO • NodeJS • Express  • Firebase</p>
-                <p className='text-gray-800 py-4 text-lg'> <a className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white px-4 py-2 font-medium rounded' href='https://youtu.be/c_A_ctavXEY' target='blank'>Walk-through</a> <a className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white px-4 py-2 font-medium rounded' href='https://github.com/TamlynSpringer/SOUTH-UNO'>Code</a></p>
-              </article>
-            </div>          
-            <h4 className='text-2xl underline font-medium py-6 text-center hover:text-emerald-800 dark:text-emerald-100'><Link href='/projects'>All projects</Link></h4>
-          </section>
-          <section>
-            <h3 className='text-4xl font-medium py-6 text-center dark:text-emerald-100'>Background</h3>
-            <ol className="border-l-2 border-emerald-600">
-              <li>
-                <div className="flex flex-start items-center">
-                  <div className="bg-emerald-600 w-4 h-4 flex items-center justify-center rounded-full -ml-2 mr-3 -mt-2"></div>
-                  <h4 className="text-gray-800 dark:text-gray-200 font-semibold text-xl -mt-2">Software developer consultant</h4>
-                </div>
-                <div className="ml-6 mb-6 pb-6">
-                  <a href="#!" className="text-emerald-600 hover:text-emerald-700 focus:text-emerald-800 duration-300 transition ease-in-out text-sm">2023</a>
-                  <p className="text-gray-700 dark:text-gray-400 mt-2 mb-4">School of Applied Technology</p>
-                  <p className="text-gray-700 dark:text-gray-400 mt-2 mb-4">Stockholm, Sweden</p>
-                  <button type="button" className="inline-block px-4 py-1.5 bg-emerald-600 text-white font-medium text-xs leading-tight rounded shadow-md hover:bg-emerald-700 hover:shadow-xl focus:bg-emerald-700 focus:shadow-xl focus:outline-none focus:ring-0 active:bg-emerald-800 active:shadow-xl transition duration-150 ease-in-out">Read more</button>
-                </div>
-              </li>
-              <li>
-                <div className="flex flex-start items-center">
-                  <div className="bg-emerald-600 w-4 h-4 flex items-center justify-center rounded-full -ml-2 mr-3 -mt-2"></div>
-                  <h4 className="text-gray-800 dark:text-gray-200 font-semibold text-xl -mt-2">Full-stack JavaScript bootcamp</h4>
-                </div>
-                <div className="ml-6 mb-6 pb-6">
-                  <a href="#!" className="text-emerald-600 hover:text-emerald-700 focus:text-emerald-800 duration-300 transition ease-in-out text-sm">2022</a>
-                  <p className="text-gray-700 dark:text-gray-400 mt-2 mb-4">School of Applied Technology</p>
-                  <p className="text-gray-700 dark:text-gray-400 mt-2 mb-4">Stockholm, Sweden</p>
-                  <button type="button" className="inline-block px-4 py-1.5 bg-emerald-600 text-white font-medium text-xs leading-tight rounded shadow-md hover:bg-emerald-700 hover:shadow-xl focus:bg-emerald-700 focus:shadow-xl focus:outline-none focus:ring-0 active:bg-emerald-800 active:shadow-xl transition duration-150 ease-in-out">Read more</button>
-                </div>
-              </li>
-              <li>
-                <div className="flex flex-start items-center">
-                  <div className="bg-emerald-600 w-4 h-4 flex items-center justify-center rounded-full -ml-2 mr-3 -mt-2"></div>
-                  <h4 className="text-gray-800 dark:text-gray-200 font-semibold text-xl -mt-2">Store supervisor</h4>
-                </div>
-                <div className="ml-6 mb-6 pb-6">
-                  <a href="#!" className="text-emerald-600 hover:text-emerald-700 focus:text-emerald-800 duration-300 transition ease-in-out text-sm">2020 - 2021</a>
-                  <p className="text-gray-700 dark:text-gray-400 mt-2 mb-4">Gone Outdoor Supply Co.</p>
-                  <p className="text-gray-700 dark:text-gray-400 mt-2 mb-4">Johannesburg, South Africa</p>
-                  <button type="button" className="inline-block px-4 py-1.5 bg-emerald-600 text-white font-medium text-xs leading-tight rounded shadow-md hover:bg-emerald-700 hover:shadow-xl focus:bg-emerald-700 focus:shadow-xl focus:outline-none focus:ring-0 active:bg-emerald-800 active:shadow-xl transition duration-150 ease-in-out">Read more</button>
-                </div>
-                <div className="flex flex-start items-center">
-                  <div className="bg-emerald-600 w-4 h-4 flex items-center justify-center rounded-full -ml-2 mr-3 -mt-2"></div>
-                  <h4 className="text-gray-800 dark:text-gray-200 font-semibold text-xl -mt-2">Masters of Science</h4>
-                </div>
-                <div className="ml-6 mb-6 pb-6">
-                  <a href="#!" className="text-emerald-600 hover:text-emerald-700 focus:text-emerald-800 duration-300 transition ease-in-out text-sm">2017 - 2019</a>
-                  <p className="text-gray-700 dark:text-gray-400 mt-2 mb-4">University of the Witwatersrand</p>
-                  <p className="text-gray-700 dark:text-gray-400 mt-2 mb-4">Johannesburg, South Africa</p>
-                  <button type="button" className="inline-block px-4 py-1.5 bg-emerald-600 text-white font-medium text-xs leading-tight rounded shadow-md hover:bg-emerald-700 hover:shadow-xl focus:bg-emerald-700 focus:shadow-xl focus:outline-none focus:ring-0 active:bg-emerald-800 active:shadow-xl transition duration-150 ease-in-out">Read more</button>
-                </div>
-                <div className="flex flex-start items-center">
-                  <div className="bg-emerald-600 w-4 h-4 flex items-center justify-center rounded-full -ml-2 mr-3 -mt-2"></div>
-                  <h4 className="text-gray-800 dark:text-gray-200 font-semibold text-xl -mt-2">Teaching assistant</h4>
-                </div>
-                <div className="ml-6 mb-6 pb-6">
-                  <a href="#!" className="text-emerald-600 hover:text-emerald-700 focus:text-emerald-800 duration-300 transition ease-in-out text-sm">2016 - 2019</a>
-                  <p className="text-gray-700 dark:text-gray-400 mt-2 mb-4">University of the Witwatersrand</p>
-                  <p className="text-gray-700 dark:text-gray-400 mt-2 mb-4">Johannesburg, South Africa</p>
-                  <button type="button" className="inline-block px-4 py-1.5 bg-emerald-600 text-white font-medium text-xs leading-tight rounded shadow-md hover:bg-emerald-700 hover:shadow-xl focus:bg-emerald-700 focus:shadow-xl focus:outline-none focus:ring-0 active:bg-emerald-800 active:shadow-xl transition duration-150 ease-in-out">Read more</button>
-                </div>
-              </li>
-            </ol>
-          </section>
-        </main>
-      </div>
+        <section id='projects'>
+          <h3 className='text-4xl font-medium py-6 text-center dark:text-emerald-100'>Projects</h3>
+          <div className='flex flex-col gap-10 lg:flex-row lg:flex-wrap'>
+            <article className='text-center my-10 shadow-xl rounded-xl bg-zinc-300 basis-1/3 flex-1 dark:bg-zinc-300'>
+              <Image className='relative mx-auto rounded-t-xl object-cover mt-3' src={project1} alt='project-ecom' width={600} height={400} />
+              <h4 className='py-4 text-emerald-900 font-semibold text-2xl'>Full-stack e-commerce site</h4>
+              <p className='text-gray-800 py-4'>ReactJS • React-Bootstrap • NodeJS • MongoDB • Mongoose • Express</p>
+              <p className='text-gray-800 py-4 text-lg'><a className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white px-4 py-2 font-medium rounded' href='https://baltic-store.netlify.app/' target='blank'>Site</a> <a className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white px-4 py-2 font-medium rounded' href='https://github.com/TamlynSpringer/eCommerce_Client' target='blank'>FE code</a> <a className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white px-4 py-2 font-medium rounded' href='https://github.com/TamlynSpringer/eCommerce_Server' target='blank'>BE code</a></p>
+            </article>
+            <article className='text-center my-10 shadow-xl rounded-xl bg-zinc-300 basis-1/3 flex-1 dark:bg-zinc-300'>
+              <Image className='relative mx-auto rounded-t-xl object-cover mt-3' src={project2} alt='project-blog' width={600} height={400} />
+              <h4 className='py-4 text-emerald-900 font-semibold text-2xl'>Facts site</h4>
+              <p className='text-gray-800 py-4'>ReactJS • Typescript • Vite • TailwindCSS</p>
+              <p className='text-gray-800 py-4 text-lg'><a className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white px-4 py-2 font-medium rounded' href='https://planetary-facts-1337.netlify.app/' target='blank'>Site</a> <a className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white px-4 py-2 font-medium rounded' href='https://github.com/TamlynSpringer/planetary-facts-vite' target='blank'>Code</a></p>
+            </article>
+            <article className='text-center my-10 shadow-xl rounded-xl bg-zinc-300 basis-1/3 flex-1 dark:bg-zinc-300'>
+              <Image className='relative mx-auto rounded-t-xl object-cover mt-3' src={project3} alt='project-blog' width={600} height={400} />
+              <h4 className='py-4 text-emerald-900 font-semibold text-2xl'>Full-stack to-do app</h4>
+              <p className='text-gray-800 py-4'>ReactJS • Typescript • NodeJS • Express • MongoDB • Mongoose</p>
+              <p className='text-gray-800 py-4 text-lg'><a className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white px-4 py-2 font-medium rounded' href='https://ts-mern-todo.netlify.app/' target='blank'>Site</a> <a className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white px-4 py-2 font-medium rounded' href='https://github.com/TamlynSpringer/to-do-app-typescript-client' target='blank'>FE Code</a> <a className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white px-4 py-2 font-medium rounded' href='https://github.com/TamlynSpringer/to-do-app-typescript-server' target='blank'>BE Code</a></p>
+            </article>
+            <article className='text-center my-10 shadow-xl rounded-xl bg-zinc-300 basis-1/3 flex-1 dark:bg-zinc-300'>
+              <Image className='relative mx-auto rounded-t-xl mt-3' src={project4} alt='project-gallery' width={600} height={400} />
+              <h4 className='py-4 text-emerald-900 font-semibold text-2xl'>Image gallery & search</h4>
+              <p className='text-gray-800 py-4'>ReactJS • TailwindCSS • Unsplash API • Axios</p>
+              <p className='text-gray-800 py-4 text-lg'><a className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white px-4 py-2 font-medium rounded' href='https://react-image-search-gallery.netlify.app/' target='blank'>Site</a> <a className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white px-4 py-2 font-medium rounded' href='https://github.com/TamlynSpringer/image-gallery' target='blank'>Code</a></p>
+            </article>
+            <article className='text-center my-10 shadow-xl rounded-xl bg-zinc-300 basis-1/3 flex-1 dark:bg-zinc-300'>
+              <Image className='relative mx-auto rounded-t-xl object-cover w-3/4 mt-3' src={project5} alt='project-blog' width={600} height={400} />
+              <h4 className='py-4 text-emerald-900 font-semibold text-2xl'>Goals mobile app</h4>
+              <p className='text-gray-800 py-4'>React Native • Expo</p>
+              <p className='text-gray-800 py-4 text-lg'><a className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white px-4 py-2 font-medium rounded' href='https://github.com/TamlynSpringer/blog-typescript-react' target='blank'>Code</a></p>
+            </article>
+            <article className='text-center my-10 shadow-xl rounded-xl bg-zinc-300 basis-1/3 flex-1 dark:bg-zinc-300'>
+              <Image className='relative mx-auto rounded-t-xl mt-3' src={project6} alt='project-uno' width={600} height={400} />
+              <h4 className='py-4 text-emerald-900 font-semibold text-2xl'>Multi-player card game</h4>
+              <p className='text-gray-800 py-4'>ReactJS • SocketIO • NodeJS • Express  • Firebase</p>
+              <p className='text-gray-800 py-4 text-lg'> <a className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white px-4 py-2 font-medium rounded' href='https://youtu.be/c_A_ctavXEY' target='blank'>Walk-through</a> <a className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white px-4 py-2 font-medium rounded' href='https://github.com/TamlynSpringer/SOUTH-UNO'>Code</a></p>
+            </article>
+          </div>          
+          <h4 className='text-2xl underline font-medium py-6 text-center hover:text-emerald-800 dark:text-emerald-100'><Link href='/projects'>All projects</Link></h4>
+        </section>
+        <Background />
+        <Footer />
+      </main>
+    </div>
   )
 }
