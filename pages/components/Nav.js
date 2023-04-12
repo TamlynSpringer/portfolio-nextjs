@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
+import {RxHamburgerMenu} from 'react-icons/rx';
 import logoDark from '../../public/logo-d.svg';
 import logoLight from '../../public/logo-l.svg';
 import Link from 'next/link';
@@ -36,9 +37,7 @@ const Nav = ({ darkMode, setDarkMode }) => {
           className="space-y-2 pt-20"
           onClick={() => setIsNavOpen((prev) => !prev)}
         >
-          <span className="block h-0.5 w-8 animate-pulse bg-zinc-900"></span>
-          <span className="block h-0.5 w-8 animate-pulse bg-zinc-900"></span>
-          <span className="block h-0.5 w-8 animate-pulse bg-zinc-900"></span>
+          <div className='cursor-pointer text-3xl text-zinc-900 dark:text-zinc-200'><RxHamburgerMenu /></div>
         </div>
 
         <div className={isNavOpen ? "showMenuNav bg-zinc-100 dark:bg-zinc-800" : "hideMenuNav"}>
@@ -47,7 +46,7 @@ const Nav = ({ darkMode, setDarkMode }) => {
             onClick={() => setIsNavOpen(false)}
           >
             <svg
-              className="h-8 w-8 text-zinc-900"
+              className="h-8 w-8 text-zinc-900 dark:text-zinc-200"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -110,8 +109,6 @@ const Nav = ({ darkMode, setDarkMode }) => {
           height: 60vh;
           top: 0;
           left: 0;
-          // background-color: black;
-          // background-color: '#f4f4f5';
           z-index: 10;
           display: flex;
           flex-direction: column;

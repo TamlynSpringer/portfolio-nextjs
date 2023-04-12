@@ -1,4 +1,6 @@
+import Link from 'next/link';
 import React from 'react'
+import SaltConsultant from '../background/consultant';
 
 const Background = () => {
   return (
@@ -13,7 +15,7 @@ const Background = () => {
             <p className="font-bold text-emerald-600 hover:text-emerald-700 focus:text-emerald-800 duration-300 transition ease-in-out text-sm">2023</p>
             <p className="text-gray-700 dark:text-gray-400 mt-2 mb-4">School of Applied Technology</p>
             <p className="text-gray-700 dark:text-gray-400 mt-2 mb-4">Stockholm, Sweden</p>
-            <button type="button" className="inline-block px-4 py-1.5 bg-emerald-600 text-white font-medium text-xs leading-tight rounded shadow-md hover:bg-emerald-700 hover:shadow-xl focus:bg-emerald-700 focus:shadow-xl focus:outline-none focus:ring-0 active:bg-emerald-800 active:shadow-xl transition duration-150 ease-in-out">Read more</button>
+            <button type="button" className="inline-block px-4 py-1.5 bg-emerald-600 text-white font-medium text-xs leading-tight rounded shadow-md hover:bg-emerald-700 hover:shadow-xl focus:bg-emerald-700 focus:shadow-xl focus:outline-none focus:ring-0 active:bg-emerald-800 active:shadow-xl transition duration-150 ease-in-out"><Link href='/background/consultant'>Read more</Link></button>
           </div>
         </li>
         <li>
@@ -25,7 +27,7 @@ const Background = () => {
             <p className="font-bold text-emerald-600 hover:text-emerald-700 focus:text-emerald-800 duration-300 transition ease-in-out text-sm">2022</p>
             <p className="text-gray-700 dark:text-gray-400 mt-2 mb-4">School of Applied Technology</p>
             <p className="text-gray-700 dark:text-gray-400 mt-2 mb-4">Stockholm, Sweden</p>
-            <button type="button" className="inline-block px-4 py-1.5 bg-emerald-600 text-white font-medium text-xs leading-tight rounded shadow-md hover:bg-emerald-700 hover:shadow-xl focus:bg-emerald-700 focus:shadow-xl focus:outline-none focus:ring-0 active:bg-emerald-800 active:shadow-xl transition duration-150 ease-in-out">Read more</button>
+            <button type="button" className="inline-block px-4 py-1.5 bg-emerald-600 text-white font-medium text-xs leading-tight rounded shadow-md hover:bg-emerald-700 hover:shadow-xl focus:bg-emerald-700 focus:shadow-xl focus:outline-none focus:ring-0 active:bg-emerald-800 active:shadow-xl transition duration-150 ease-in-out"><Link href='/background/bootcamp'>Read more</Link></button>
           </div>
         </li>
         <li>
