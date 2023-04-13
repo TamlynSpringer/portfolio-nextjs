@@ -59,13 +59,13 @@ const Nav = ({ darkMode, setDarkMode }) => {
             </svg>
           </div>
           <ul className="flex flex-col items-center justify-between min-h-[250px]">
-            <li className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white py-4 px-6 font-medium rounded'>
+            <li className='ml-8 bg-gradient-to-r from-emerald-900 to-emerald-600 text-white py-4 px-6 font-medium rounded-3xl'>
               <a href="#projects">Projects</a>
             </li>
-            <li className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white py-4 px-6 font-medium rounded'>
+            <li className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white py-4 px-6 font-medium rounded-3xl'>
               <a href="#background">Background</a>
             </li>
-            <li className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white py-4 px-6 font-medium rounded'>
+            <li className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white py-4 px-6 font-medium rounded-3xl'>
               <a href="#contact">Contact</a>
             </li>
           </ul>
@@ -75,7 +75,7 @@ const Nav = ({ darkMode, setDarkMode }) => {
       <ul className='hidden lg:flex items-center'>
         <li>
           <a 
-          className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white py-4 px-6 font-medium rounded'
+          className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white py-4 px-6 font-medium rounded-3xl'
           href="#projects"
           aria-label="Projects">
           Projects
@@ -83,7 +83,7 @@ const Nav = ({ darkMode, setDarkMode }) => {
         </li>
         <li>
           <a 
-          className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white py-4 px-6 font-medium rounded'
+          className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white py-4 px-6 font-medium rounded-3xl'
           href="#background"
           aria-label="Background">
           Background
@@ -91,7 +91,7 @@ const Nav = ({ darkMode, setDarkMode }) => {
         </li>
         <li>
           <a 
-          className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white py-4 px-6 font-medium rounded'
+          className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white py-4 px-6 font-medium rounded-3xl'
           href="#contact"
           aria-label="Contact">
           Contact
