@@ -4,6 +4,8 @@ import { FaReact, FaNodeJs } from 'react-icons/fa';
 import { TbBrandNextjs } from 'react-icons/tb';
 import { RiLeafFill, RiLeafLine } from 'react-icons/ri'
 import Nav from '../components/Nav';
+import diploma from '../../public/files/diploma.png'
+import Image from 'next/image';
 
 const SaltBootcamp = () => {
   return (
@@ -41,13 +43,10 @@ const SaltBootcamp = () => {
           <h3 className='py-4 text-emerald-900 font-semibold text-3xl'>Team skills</h3>
           <ul>
             <li className='flex flex-row text-gray-800 py-2 text-lg'><RiLeafFill />&emsp; Mob programming / software teaming</li>
-            <li className='flex flex-row text-gray-800 py-2 text-lg'><RiLeafLine />&emsp; Pair programming</li>
-            <li className='flex flex-row text-gray-800 py-2 text-lg'><RiLeafFill />&emsp; Daily stand up meetings</li>
-            <li className='flex flex-row text-gray-800 py-2 text-lg'><RiLeafLine />&emsp; Team retrospectives</li>
-            <li className='flex flex-row text-gray-800 py-2 text-lg'><RiLeafFill />&emsp; Projects demos</li>
-            <li className='flex flex-row text-gray-800 py-2 text-lg'><RiLeafLine />&emsp; Vertical slicing</li>
-            <li className='flex flex-row text-gray-800 py-2 text-lg'><RiLeafFill />&emsp; Agile methodology</li>
+            <li className='flex flex-row text-gray-800 py-2 text-lg'><RiLeafLine />&emsp; Stand up meetings & retrospectives</li>
+            <li className='flex flex-row text-gray-800 py-2 text-lg'><RiLeafFill />&emsp; Agile methodology, project demos & TDD</li>
           </ul>
+          <Image className='relative rounded-xl shadow-lg object-cover pt-4' src={diploma} alt='salt-diploma' width='auto' height={500} /> 
         </article>
       </div>
     </section>

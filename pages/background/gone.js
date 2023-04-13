@@ -1,0 +1,24 @@
+import React from 'react'
+import Nav from '../components/Nav'
+import Image from 'next/image'
+import rec from '../../public/files/gone.png'
+
+const gone = () => {
+  return (
+    <section className='min-h-screen bg-zinc-100 md:px-20 lg:px-80 dark:bg-zinc-800'>
+      <Nav />
+      <article>
+        <h2 className='text-4xl font-medium py-6 dark:text-emerald-100'>Retail store supervisor</h2>
+        <h3 className='py-4 text-emerald-900 font-semibold text-3xl'>Gone Outdoor Supply Co.</h3>
+        <h3 className='py-4 text-emerald-900 font-semibold text-2xl'>Johannesburg, South Africa</h3>
+        <p className='text-gray-800 py-4 text-lg'>Managing daily operations and sales for the store, whilst supervising the store assistants.</p>
+        <p className='text-gray-800 py-4 text-lg'>Ensure customers receive excellent service, including having exemplary product knowledge, and a genuine understanding of product design and its intended use.</p>
+        <p className='text-gray-800 py-4 text-lg'>Handled administrative duties as assigned, as well as hired and trained store assistants.</p>
+        <p className='text-gray-800 py-4 text-lg'>Execution of accurate receipt and control of stock in store through regular inventory counts and transfers of stock.</p>
+      </article>
+      <Image className='relative rounded-t-xl shadow-lg object-cover py-2' src={rec} alt='gone-rec' width='auto' height={600} /> 
+    </section>
+  )
+}
+
+export default gone
