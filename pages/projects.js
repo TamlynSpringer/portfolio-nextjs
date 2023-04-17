@@ -10,7 +10,7 @@ import project8 from '../public/project8.png';
 import project9 from '../public/project9.png';
 import project10 from '../public/project10.png';
 import Nav from './components/Nav';
-import { ScrollToTop } from './components/ScrollToTop';
+import ScrollToTop from './components/ScrollToTop';
 
 const Projects = () => {
   // const [darkMode, setDarkMode] = useState(false);

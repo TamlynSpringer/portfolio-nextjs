@@ -15,7 +15,7 @@ import project6 from '../public/project6.png';
 import floralsDark from '../public/florals-d.png';
 import floralsLight from '../public/florals-l.png';
 import Link from 'next/link';
-import { ScrollToTop } from './components/ScrollToTop';
+import ScrollToTop from './components/ScrollToTop';
 
 const inter = Inter({ subsets: ['latin'] })
 
