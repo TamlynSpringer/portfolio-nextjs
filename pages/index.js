@@ -15,6 +15,7 @@ import project6 from '../public/project6.png';
 import floralsDark from '../public/florals-d.png';
 import floralsLight from '../public/florals-l.png';
 import Link from 'next/link';
+import { ScrollToTop } from './components/ScrollToTop';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -28,6 +29,7 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
+      <ScrollToTop />
       <main className='min-h-screen bg-zinc-100 md:px-20 lg:px:40 dark:bg-zinc-800'>
         <Nav darkMode={darkMode} setDarkMode={setDarkMode} />
         <Intro darkMode={darkMode} />
