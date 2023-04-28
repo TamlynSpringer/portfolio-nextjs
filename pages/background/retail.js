@@ -1,12 +1,12 @@
 import React from 'react'
-import Nav from '../components/Nav'
+import BackNav from '../components/BackNav'
 import Image from 'next/image'
 import rec from '../../public/files/gone.png'
 
 const gone = () => {
   return (
     <section className='min-h-screen bg-zinc-100 md:px-20 lg:px-80 dark:bg-zinc-800'>
-      <Nav />
+      <BackNav />
       <article>
         <h2 className='text-4xl font-medium py-6 dark:text-emerald-100'>Retail store supervisor</h2>
         <h3 className='py-4 text-emerald-900 font-semibold text-3xl'>Gone Outdoor Supply Co.</h3>

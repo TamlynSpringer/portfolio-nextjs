@@ -1,11 +1,11 @@
 import React from 'react'
-import Nav from '../components/Nav'
+import BackNav from '../components/BackNav'
 import { RiLeafFill, RiLeafLine } from 'react-icons/ri'
 
 const msc = () => {
   return (
     <section className='min-h-screen bg-zinc-100 md:px-20 lg:px:40 dark:bg-zinc-800'>
-      <Nav />
+      <BackNav />
       <article>
       <h2 className='text-4xl font-medium py-6 dark:text-emerald-100'>Masters of Science</h2>
         <h3 className='py-4 text-emerald-900 font-semibold text-3xl'>University of the Witwatersrand</h3>

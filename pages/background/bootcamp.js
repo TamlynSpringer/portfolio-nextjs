@@ -3,14 +3,14 @@ import { SiJavascript, SiMongodb, SiHtml5, SiCss3, SiNetlify, SiContentful, SiPo
 import { FaReact, FaNodeJs } from 'react-icons/fa';
 import { TbBrandNextjs } from 'react-icons/tb';
 import { RiLeafFill, RiLeafLine } from 'react-icons/ri'
-import Nav from '../components/Nav';
 import diploma from '../../public/files/diploma.png'
 import Image from 'next/image';
+import BackNav from '../components/BackNav';
 
 const SaltBootcamp = () => {
   return (
     <section className='min-h-screen bg-zinc-100 md:px-20 lg:px-80 dark:bg-zinc-800'>
-      <Nav />
+      <BackNav />
       <article>
         <h2 className='text-4xl font-medium py-6 dark:text-emerald-100'>Full-stack JavaScript development</h2>
         <h3 className='py-4 text-emerald-900 font-semibold text-3xl'>School of Applied Technology</h3>

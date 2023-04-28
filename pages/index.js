@@ -64,7 +64,7 @@ export default function Home() {
               <Image className='relative mx-auto rounded-t-xl object-cover w-3/4 mt-3' src={project5} alt='project-blog' width={600} height={400} />
               <h4 className='py-4 text-emerald-900 font-semibold text-2xl'>Goals mobile app</h4>
               <p className='text-gray-800 py-4'>React Native • Expo</p>
-              <p className='text-gray-800 py-4 text-lg'><a className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white px-4 py-2 font-medium rounded-3xl' href='https://github.com/TamlynSpringer/blog-typescript-react' target='blank'>Code</a></p>
+              <p className='text-gray-800 py-4 text-lg'><a className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white px-4 py-2 font-medium rounded-3xl' href='https://github.com/TamlynSpringer/React-Native-goals-app' target='blank'>Code</a></p>
             </article>
             <article className='text-center my-10 shadow-xl rounded-xl bg-zinc-300 basis-1/3 flex-1 dark:bg-zinc-300'>
               <Image className='relative mx-auto rounded-t-xl mt-3' src={project6} alt='project-uno' width={600} height={400} />
