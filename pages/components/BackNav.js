@@ -11,7 +11,7 @@ const BackNav = () => {
           src={backL}
           alt="Light back logo"
           width={'auto'}
-          height={100}
+          height={120}
         />
       </Link>
     </nav>

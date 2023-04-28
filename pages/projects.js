@@ -9,14 +9,15 @@ import project7 from '../public/project7.png';
 import project8 from '../public/project8.png';
 import project9 from '../public/project9.png';
 import project10 from '../public/project10.png';
-import Nav from './components/Nav';
+import BackNav from './components/BackNav';
 import ScrollToTop from './components/ScrollToTop';
+import Footer from './components/Footer';
 
 const Projects = () => {
   // const [darkMode, setDarkMode] = useState(false);
   return (
     <main className='min-h-screen bg-zinc-100 md:px-20 lg:px:40 dark:bg-zinc-800'>
-      <Nav />
+      <BackNav />
       <ScrollToTop />
       <div className='flex flex-col gap-10 lg:flex-row lg:flex-wrap'>
         <article className='text-center my-10 shadow-xl rounded-xl bg-zinc-300 basis-1/3 flex-1 dark:bg-zinc-300'>
@@ -79,7 +80,8 @@ const Projects = () => {
           <p className='text-gray-800 py-4'>HTML5 • CSS3 • Mobile first</p>
           <p className='text-gray-800 py-4 text-lg'><a className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white px-4 py-2 font-medium rounded-3xl' href='#' target='blank'>Site</a> <a className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white px-4 py-2 font-medium rounded-3xl' href='https://github.com/TamlynSpringer/Pricing-panel' target='blank'>Code</a></p>
         </article>
-      </div>          
+      </div>
+      <Footer />         
     </main>
 
   )
