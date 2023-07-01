@@ -2,20 +2,20 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {RxHamburgerMenu} from 'react-icons/rx';
-import logoDark from '../../public/logo-d.svg';
-import logoLight from '../../public/logo-l.svg';
+import logoDark from '../../public/logo-dark.svg';
+import logoLight from '../../public/logo-light.svg';
 import Link from 'next/link';
 
 const Nav = ({ darkMode, setDarkMode }) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   return (
-    <nav className='py-4 mb-12 mx-10 flex justify-around'>
+    <nav className='py-4 mb-4 mx-1 flex justify-around'>
       {darkMode === true ? (
         <Link href='/'>
           <Image
             src={logoLight}
             alt="Light Logo"
-            width={200}
+            width={150}
             height={120}
           />
         </Link>
@@ -24,17 +24,17 @@ const Nav = ({ darkMode, setDarkMode }) => {
           <Image
             src={logoDark}
             alt="Dark Logo"
-            width={200}
+            width={150}
             height={120}
           />
         </Link>
       )}
-      <div className='pt-20 cursor-pointer text-2xl text-zinc-900 dark:text-zinc-200'>
+      <div className='pt-6 cursor-pointer text-2xl text-zinc-900 dark:text-zinc-100'>
         <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} />
       </div>
       <section className="flex lg:hidden">
         <div
-          className="space-y-2 pt-20"
+          className="space-y-2 pt-6"
           onClick={() => setIsNavOpen((prev) => !prev)}
         >
           <div className='cursor-pointer text-3xl text-zinc-900 dark:text-zinc-200'><RxHamburgerMenu /></div>
@@ -42,11 +42,11 @@ const Nav = ({ darkMode, setDarkMode }) => {
 
         <div className={isNavOpen ? "showMenuNav bg-zinc-100 dark:bg-zinc-800" : "hideMenuNav"}>
           <div
-            className="absolute top-0 right-0 px-16 pt-20"
+            className="absolute top-0 right-0 px-16 pt-6"
             onClick={() => setIsNavOpen(false)}
           >
             <svg
-              className="h-8 w-8 text-zinc-900 dark:text-zinc-200"
+              className="h-8 w-8 text-zinc-900 dark:text-zinc-100"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
@@ -59,13 +59,13 @@ const Nav = ({ darkMode, setDarkMode }) => {
             </svg>
           </div>
           <ul className="flex flex-col items-center justify-between min-h-[250px]">
-            <li className='ml-8 bg-gradient-to-r from-emerald-900 to-emerald-600 text-white py-4 px-6 font-medium rounded-3xl'>
+            <li className='ml-8 bg-gradient-to-r from-emerald-900 to-emerald-600 text-white py-4 px-6 font-medium rounded-full'>
               <a href="#projects">Projects</a>
             </li>
-            <li className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white py-4 px-6 font-medium rounded-3xl'>
+            <li className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white py-4 px-6 font-medium rounded-full'>
               <a href="#background">Background</a>
             </li>
-            <li className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white py-4 px-6 font-medium rounded-3xl'>
+            <li className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white py-4 px-6 font-medium rounded-full'>
               <a href="#contact">Contact</a>
             </li>
           </ul>

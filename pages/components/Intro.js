@@ -8,9 +8,11 @@ const Intro = ({ darkMode }) => {
   return (
     <section className='flex flex-col gap-10 lg:flex-row lg:flex-wrap'>
       <div className='py-4 basis-1/3 flex-1'>
-        <div className='text-center p-10 basis-1/3 flex-1'>
-          <h2 className='text-5xl py-4 text-emerald-900 font-medium md:text-6xl dark:text-emerald-50'>Tamlyn Springer</h2>
-          <h3 className='text-2xl py-2 md:text-3xl dark:text-emerald-100'>Full-stack JavaScript & TypeScript developer based in Stockholm, Sweden</h3>
+        <div className='text-center py-10 px-4 basis-1/3 flex-1'>
+          <h2 className='text-5xl py-4 text-emerald-900 font-medium md:text-6xl dark:text-emerald-50'>Hi, I&apos;m Tamlyn Springer</h2>
+          <h3 className='text-2xl py-2 md:text-3xl dark:text-emerald-200'>Developer & Designer</h3>
+          <h4 className='text-xl py-2 md:text-2xl dark:text-emerald-100'>Focusing on JavaScript, TypeScript & React</h4>
+          <h4 className='text-xl py-2 md:text-2xl dark:text-emerald-100'>Based in Stockholm, Sweden</h4>
         </div>
         <div className='text-5xl flex justify-center gap-16 py-3 text-zinc-700  dark:text-zinc-200'>
           <a href='https://github.com/TamlynSpringer' target='blank'><AiFillGithub /></a>
