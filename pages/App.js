@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { Inter } from '@next/font/google';
-import {BsFillMoonStarsFill} from 'react-icons/bs'
+import {IoMoonSharp} from 'react-icons/io';
 import Image from 'next/image';
 import logoDark from '../public/logo-d.svg';
 import logoLight from '../public/logo-l.svg';
@@ -50,7 +50,7 @@ export default function Home() {
         )}
           <ul className='flex items-center'>
             <li className='cursor-pointer text-2xl text-zinc-900 dark:text-zinc-200'>
-              <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} />
+              <IoMoonSharp onClick={() => setDarkMode(!darkMode)} />
             </li>
             <li><a className='ml-8  bg-gradient-to-r from-emerald-900 to-emerald-600 text-white px-4 py-2 font-medium rounded' href='#'>CV</a></li>
           </ul>
