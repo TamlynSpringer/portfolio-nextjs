@@ -9,7 +9,7 @@ const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false)
 
   const toggleVisibility = () => {
-    if (window.pageYOffset > 300) {
+    if (window.scrollY > 300) {
       setIsVisible(true)
     } else {
       setIsVisible(false)
@@ -38,7 +38,7 @@ const ScrollToTop = () => {
         onClick={scrollToTop}
         className={classNames(
           isVisible ? 'opacity-100' : 'opacity-0',
-          'bg-emerald-900 hover:bg-emerald-800 focus:ring-emerald-00 inline-flex items-center rounded-full p-3 text-white shadow-sm transition-opacity focus:outline-none focus:ring-2 focus:ring-offset-2',
+          'bg-green-800 hover:bg-green-700 focus:ring-green-700 inline-flex items-center rounded-full p-3 text-white shadow-sm transition-opacity focus:outline-none focus:ring-2 focus:ring-offset-2',
         )}
       >
         <BiArrowFromBottom className="h-6 w-6" aria-hidden="true" />

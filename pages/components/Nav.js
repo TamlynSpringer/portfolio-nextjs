@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import {IoMoonSharp} from 'react-icons/io5';
-import {IoSunnyOutline} from 'react-icons/io5';
+import {IoSunny} from 'react-icons/io5';
 import {RxHamburgerMenu} from 'react-icons/rx';
 import logoDark from '../../public/logo-dark.svg';
 import logoLight from '../../public/logo-light.svg';
@@ -10,29 +10,36 @@ import Link from 'next/link';
 const Nav = ({ darkMode, setDarkMode }) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   return (
-    <nav className='py-4 mb-4 mx-1 flex justify-between'>
+    <nav className='py-4 mb-4 mx-5 flex justify-between'>
       {darkMode === true ? (
-        <Link href='/'>
-          <Image
-            src={logoLight}
-            alt="Light Logo"
-            width={150}
-            height={120}
-          />
-        </Link>
+        <>
+          <Link href='/'>
+            <Image
+              src={logoLight}
+              alt="Light Logo"
+              width={150}
+              height={120}
+            />
+          </Link>
+        <div className='pt-6 cursor-pointer text-2xl text-neutral-900 dark:text-neutral-100'>
+          <IoSunny onClick={() => setDarkMode(!darkMode)} />
+        </div>
+      </>
       ) : (
-        <Link href='/'>
-          <Image
-            src={logoDark}
-            alt="Dark Logo"
-            width={150}
-            height={120}
-          />
-        </Link>
+        <>
+          <Link href='/'>
+            <Image
+              src={logoDark}
+              alt="Dark Logo"
+              width={150}
+              height={120}
+            />
+          </Link>
+            <div className='pt-6 cursor-pointer text-2xl text-neutral-900 dark:text-neutral-100'>
+            <IoMoonSharp onClick={() => setDarkMode(!darkMode)} />
+          </div>
+        </>
       )}
-      <div className='pt-6 cursor-pointer text-2xl text-neutral-900 dark:text-neutral-100'>
-        <IoMoonSharp onClick={() => setDarkMode(!darkMode)} />
-      </div>
       <section className="flex lg:hidden">
         <div
           className="space-y-2 pt-6"
@@ -60,13 +67,13 @@ const Nav = ({ darkMode, setDarkMode }) => {
             </svg>
           </div>
           <ul className="flex flex-col items-center justify-between min-h-[250px]">
-            <li className='ml-8 text-emerald-900 dark:text-emerald-200 py-4 px-6 text-xl'>
+            <li className='ml-8 text-green-900 dark:text-green-200 py-4 px-6 text-xl'>
               <a href="#projects">Projects</a>
             </li>
-            <li className='ml-8  text-emerald-900 dark:text-emerald-200 py-4 px-6 text-xl'>
+            <li className='ml-8  text-green-900 dark:text-green-200 py-4 px-6 text-xl'>
               <a href="#background">Background</a>
             </li>
-            <li className='ml-8  text-emerald-900 dark:text-emerald-200 py-4 px-6 text-xl'>
+            <li className='ml-8  text-green-900 dark:text-green-200 py-4 px-6 text-xl'>
               <a href="#contact">Contact</a>
             </li>
           </ul>
@@ -76,7 +83,7 @@ const Nav = ({ darkMode, setDarkMode }) => {
       <ul className='hidden lg:flex items-center'>
         <li>
           <a 
-          className='ml-8   text-emerald-900 dark:text-emerald-200 py-4 px-6 text-xl'
+          className='ml-8   text-green-900 dark:text-green-200 py-4 px-6 text-xl'
           href="#projects"
           aria-label="Projects">
           Projects
@@ -84,7 +91,7 @@ const Nav = ({ darkMode, setDarkMode }) => {
         </li>
         <li>
           <a 
-          className='ml-8   text-emerald-900 dark:text-emerald-200 py-4 px-6 text-xl'
+          className='ml-8   text-green-900 dark:text-green-200 py-4 px-6 text-xl'
           href="#background"
           aria-label="Background">
           Background
@@ -92,7 +99,7 @@ const Nav = ({ darkMode, setDarkMode }) => {
         </li>
         <li>
           <a 
-          className='ml-8   text-emerald-900 dark:text-emerald-200 py-4 px-6 text-xl'
+          className='ml-8   text-green-900 dark:text-green-200 py-4 px-6 text-xl'
           href="#contact"
           aria-label="Contact">
           Contact
