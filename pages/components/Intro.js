@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import profile from '../../public/profile.PNG';
+import profile from '../../public/profile.png';
 import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai';
 
 const Intro = () => {
