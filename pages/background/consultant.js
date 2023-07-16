@@ -3,13 +3,11 @@ import { SiJsonwebtokens, SiTypescript, SiBootstrap, SiRemix, SiTailwindcss, SiV
 import { TbBrandVite } from 'react-icons/tb';
 import { GrReactjs } from 'react-icons/gr';
 import BackNav from '../components/BackNav';
-import Link from 'next/link';
-import Image from 'next/image';
-import backL from '../../public/back-l.svg'
+
 
 const SaltConsultant = () => {
   return (
-    <section className='min-h-screen bg-zinc-100 md:px-20 lg:px:40 dark:bg-zinc-800'>
+    <section className='min-h-screen bg-zinc-100 px-10 md:px-20 lg:px:40 dark:bg-zinc-800'>
       <BackNav />
       <article>
         <h2 className='text-4xl font-medium py-6 dark:text-green-100'>Software developer consultant </h2>

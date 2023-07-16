@@ -2,14 +2,14 @@ import React from 'react';
 import { SiJavascript, SiMongodb, SiHtml5, SiCss3, SiNetlify, SiContentful, SiPostgresql, SiGraphql, SiExpress, SiFirebase, SiSocketdotio, SiRedux } from 'react-icons/si';
 import { FaReact, FaNodeJs } from 'react-icons/fa';
 import { TbBrandNextjs } from 'react-icons/tb';
-import { RiLeafFill, RiLeafLine } from 'react-icons/ri'
+import { GiFern } from 'react-icons/gi';
 import diploma from '../../public/files/diploma.png'
 import Image from 'next/image';
 import BackNav from '../components/BackNav';
 
 const SaltBootcamp = () => {
   return (
-    <section className='min-h-screen bg-zinc-100 md:px-20 lg:px-80 dark:bg-zinc-800'>
+    <section className='min-h-screen bg-zinc-100 px-10 md:px-20 lg:px-72 dark:bg-zinc-800'>
       <BackNav />
       <article>
         <h2 className='text-4xl font-medium py-6 dark:text-green-100'>Full-stack JavaScript development</h2>
@@ -42,9 +42,9 @@ const SaltBootcamp = () => {
         <article>
           <h3 className='py-4 text-green-900 font-semibold text-3xl'>Team skills</h3>
           <ul>
-            <li className='flex flex-row text-gray-800 py-2 text-lg'><RiLeafFill />&emsp; Mob programming / software teaming</li>
-            <li className='flex flex-row text-gray-800 py-2 text-lg'><RiLeafLine />&emsp; Stand up meetings & retrospectives</li>
-            <li className='flex flex-row text-gray-800 py-2 text-lg'><RiLeafFill />&emsp; Agile methodology, project demos & TDD</li>
+            <li className='flex flex-row text-gray-800 py-2 text-lg'><GiFern />&emsp; Mob programming / software teaming</li>
+            <li className='flex flex-row text-gray-800 py-2 text-lg'><GiFern />&emsp; Stand up meetings & retrospectives</li>
+            <li className='flex flex-row text-gray-800 py-2 text-lg'><GiFern />&emsp; Agile methodology, project demos & TDD</li>
           </ul>
           <Image className='relative rounded-xl shadow-lg object-cover pt-4' src={diploma} alt='salt-diploma' width='auto' height={500} /> 
         </article>

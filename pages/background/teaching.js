@@ -1,10 +1,10 @@
-import React from 'react'
-import BackNav from '../components/BackNav'
-import { RiLeafFill, RiLeafLine } from 'react-icons/ri'
+import React from 'react';
+import BackNav from '../components/BackNav';
+import { GiFern } from 'react-icons/gi';
 
 const teaching = () => {
   return (
-    <section className='min-h-screen bg-zinc-100 md:px-20 lg:px:40 dark:bg-zinc-800'>
+    <section className='min-h-screen bg-zinc-100 px-10 md:px-20 lg:px:40 dark:bg-zinc-800'>
     <BackNav />
     <article>
     <h2 className='text-4xl font-medium py-6 dark:text-green-100'>Teaching assistant</h2>
@@ -14,11 +14,11 @@ const teaching = () => {
       <p className='text-gray-800 py-4 text-lg'>Responsibilities included running student laboratories, field trips and grading practicals and assignments.</p>
       <h3 className='py-4 text-green-900 font-semibold text-2xl'>Courses included</h3>
       <ul className=''>
-        <li className='flex flex-row text-gray-800 py-2 text-lg'><RiLeafFill />&emsp; R programming</li>
-        <li className='flex flex-row text-gray-800 py-2 text-lg'><RiLeafLine />&emsp; Biostatistics</li>
-        <li className='flex flex-row text-gray-800 py-2 text-lg'><RiLeafFill />&emsp; Introductory life sciences</li>
-        <li className='flex flex-row text-gray-800 py-2 text-lg'><RiLeafLine />&emsp; Biotic diversity</li>
-        <li className='flex flex-row text-gray-800 py-2 text-lg'><RiLeafFill />&emsp; Biogeography & evolution</li>
+        <li className='flex flex-row text-gray-800 py-2 text-lg'><GiFern />&emsp; R programming</li>
+        <li className='flex flex-row text-gray-800 py-2 text-lg'><GiFern />&emsp; Biostatistics</li>
+        <li className='flex flex-row text-gray-800 py-2 text-lg'><GiFern />&emsp; Introductory life sciences</li>
+        <li className='flex flex-row text-gray-800 py-2 text-lg'><GiFern />&emsp; Biotic diversity</li>
+        <li className='flex flex-row text-gray-800 py-2 text-lg'><GiFern />&emsp; Biogeography & evolution</li>
       </ul>
     </article>
   </section>

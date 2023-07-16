@@ -5,7 +5,7 @@ import rec from '../../public/files/gone.png'
 
 const gone = () => {
   return (
-    <section className='min-h-screen bg-zinc-100 md:px-20 lg:px-80 dark:bg-zinc-800'>
+    <section className='min-h-screen bg-zinc-100 px-10 md:px-20 lg:px-80 dark:bg-zinc-800'>
       <BackNav />
       <article>
         <h2 className='text-4xl font-medium py-6 dark:text-green-100'>Retail store supervisor</h2>
