@@ -14,6 +14,7 @@ import project5 from '../public/project5.png';
 import project6 from '../public/project6.png';
 import Link from 'next/link';
 import ScrollToTop from './components/ScrollToTop';
+import TechStack from './components/TechStack';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -31,6 +32,8 @@ export default function Home() {
       <main className='min-h-screen bg-neutral-100 px-5 sm:px-10 md:px-20 lg:px-40 xl:px-60 dark:bg-neutral-800'>
         <Nav darkMode={darkMode} setDarkMode={setDarkMode} />
         <Intro darkMode={darkMode} />
+        <TechStack darkMode={darkMode} />
+
         <section id='projects' className='px-2 '>
           <h3 className='text-4xl font-medium py-6 text-left text-emerald-900 dark:text-emerald-100'>Projects</h3>
           <div className='flex flex-col gap-1 md:gap-4 lg:gap-5 lg:flex-row lg:flex-wrap'>

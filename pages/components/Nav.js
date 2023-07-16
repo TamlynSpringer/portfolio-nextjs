@@ -10,7 +10,7 @@ import Link from 'next/link';
 const Nav = ({ darkMode, setDarkMode }) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   return (
-    <nav className='py-4 mb-4 mx-1 flex justify-around'>
+    <nav className='py-4 mb-4 mx-1 flex justify-between'>
       {darkMode === true ? (
         <Link href='/'>
           <Image
