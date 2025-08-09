@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react';
-import { BiArrowFromBottom } from 'react-icons/bi';
+import { useEffect, useState } from "react";
+import { BiArrowFromBottom } from "react-icons/bi";
 
 const classNames = (...classes) => {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ")
 }
 
 const ScrollToTop = () => {
@@ -19,15 +19,15 @@ const ScrollToTop = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     })
   }
 
   useEffect(() => {
-    window.addEventListener('scroll', toggleVisibility)
+    window.addEventListener("scroll", toggleVisibility)
 
     return () => {
-      window.removeEventListener('scroll', toggleVisibility)
+      window.removeEventListener("scroll", toggleVisibility)
     }
   }, [])
 
@@ -37,8 +37,8 @@ const ScrollToTop = () => {
         type="button"
         onClick={scrollToTop}
         className={classNames(
-          isVisible ? 'opacity-100' : 'opacity-0',
-          'bg-green-800 hover:bg-green-700 focus:ring-green-700 inline-flex items-center rounded-full p-3 text-white shadow-sm transition-opacity focus:outline-none focus:ring-2 focus:ring-offset-2',
+          isVisible ? "opacity-100" : "opacity-0",
+          "bg-green-800 hover:bg-green-700 focus:ring-green-700 inline-flex items-center rounded-full p-3 text-white shadow-sm transition-opacity focus:outline-none focus:ring-2 focus:ring-offset-2",
         )}
       >
         <BiArrowFromBottom className="h-6 w-6" aria-hidden="true" />
