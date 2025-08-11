@@ -50,6 +50,12 @@ const TechStack = ({ darkMode }) => {
             <label className="justify-self-end text-center font-medium ">Tailwind</label>
           </div>
         </li>
+        <li className="w-28 md:w-40 px-5 py-2 rounded-3xl border border-1 border-neutral-700 dark:bg-neutral-700 dark:text-white">
+          <div className="mx-auto flex items-center justify-center gap-2">
+            <Image className="h-5 w-5 md:w-7 md:h-7" src="/icons/shadcn-ui.svg" alt="Shadcn icon" width={100} height={100} />
+            <label className=" justify-self-end text-center font-medium ">Shadcn/UI</label>
+          </div>
+        </li>
         <li className="w-28 md:w-36 px-5 py-2 rounded-3xl border border-1 border-neutral-700 dark:bg-neutral-700 dark:text-white">
           <div className="mx-auto flex items-center justify-center gap-2">
             <Image className="h-5 w-5 md:w-7 md:h-7" src="/icons/bootstrap-5.svg" alt="Bootstrap5 icon" width={100} height={100} />
@@ -64,8 +70,8 @@ const TechStack = ({ darkMode }) => {
         </li>
         <li className="w-28 md:w-36 px-5 py-2 rounded-3xl border border-1 border-neutral-700 dark:bg-neutral-700 dark:text-white">
           <div className="mx-auto flex items-center justify-center gap-2">
-            <Image className="h-5 w-5 md:w-7 md:h-7" src="/icons/sass-colored.svg" alt="Sass icon" width={100} height={100} />
-            <label className=" justify-self-end text-center font-medium ">Sass</label>
+            <Image className="h-5 w-5 md:w-7 md:h-7" src="/icons/radix-ui.svg" alt="Radix icon" width={100} height={100} />
+            <label className=" justify-self-end text-center font-medium ">Radix/UI</label>
           </div>
         </li>
         <li className="w-28 md:w-36 px-5 py-2 rounded-3xl border border-1 border-neutral-700 dark:bg-neutral-700 dark:text-white">
@@ -94,8 +100,26 @@ const TechStack = ({ darkMode }) => {
         </li>
         <li className="w-28 md:w-36 px-5 py-2 rounded-3xl border border-1 border-neutral-700 dark:bg-neutral-700 dark:text-white">
           <div className="mx-auto flex items-center justify-center gap-2">
+            <Image className="h-5 w-5 md:w-7 md:h-7" src="/icons/nestJS.svg" alt="NestJS icon" width={100} height={100} />
+            <label className=" justify-self-end text-center font-medium ">NestJS</label>
+          </div>
+        </li>
+        <li className="w-28 md:w-36 px-5 py-2 rounded-3xl border border-1 border-neutral-700 dark:bg-neutral-700 dark:text-white">
+          <div className="mx-auto flex items-center justify-center gap-2">
             <Image className="h-5 w-5 md:w-7 md:h-7" src="/icons/expressjs.svg" alt="ExpressJS icon" width={100} height={100} />
             <label className=" justify-self-end text-center font-medium ">Express</label>
+          </div>
+        </li>
+        <li className="w-28 md:w-36 px-5 py-2 rounded-3xl border border-1 border-neutral-700 dark:bg-neutral-700 dark:text-white">
+          <div className="mx-auto flex items-center justify-center gap-2">
+            <Image className="h-5 w-5 md:w-7 md:h-7" src="/icons/prisma.svg" alt="Prisma icon" width={100} height={100} />
+            <label className=" justify-self-end text-center font-medium ">Prisma</label>
+          </div>
+        </li>
+        <li className="w-28 md:w-36 px-5 py-2 rounded-3xl border border-1 border-neutral-700 dark:bg-neutral-700 dark:text-white">
+          <div className="mx-auto flex items-center justify-center gap-2">
+            <Image className="h-5 w-5 md:w-7 md:h-7" src="/icons/postgresql.svg" alt="Postgres icon" width={100} height={100} />
+            <label className=" justify-self-end text-center font-medium ">PostgresSQL</label>
           </div>
         </li>
         <li className="w-28 md:w-36 px-5 py-2 rounded-3xl border border-1 border-neutral-700 dark:bg-neutral-700 dark:text-white">
@@ -108,6 +132,12 @@ const TechStack = ({ darkMode }) => {
           <div className="mx-auto flex items-center justify-center gap-2">
             <Image className="h-5 w-5 md:w-7 md:h-7" src="/icons/mongodb.svg" alt="MongoDB icon" width={100} height={100} />
             <label className=" justify-self-end text-center font-medium ">MongoDB</label>
+          </div>
+        </li>
+        <li className="w-28 md:w-36 px-5 py-2 rounded-3xl border border-1 border-neutral-700 dark:bg-neutral-700 dark:text-white">
+          <div className="mx-auto flex items-center justify-center gap-2">
+            <Image className="h-5 w-5 md:w-7 md:h-7" src="/icons/vercel.svg" alt="Vercel icon" width={100} height={100} />
+            <label className=" justify-self-end text-center font-medium ">Vercel</label>
           </div>
         </li>
         <li className="w-28 md:w-36 px-5 py-2 rounded-3xl border border-1 border-neutral-700 dark:bg-neutral-700 dark:text-white">

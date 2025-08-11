@@ -1,0 +1,210 @@
+import Image from "next/image";
+import React from "react";
+
+const Projects = () => {
+  return (
+    <section id="projects" className="px-2 ">
+      <h3 className="text-4xl font-medium py-6 text-left text-green-900 dark:text-green-100">
+        Projects
+      </h3>
+      <div className="flex flex-col gap-1 md:gap-4 lg:gap-5 lg:flex-row lg:flex-wrap">
+        <article className="px-2 text-center my-4  shadow-lg rounded-xl bg-neutral-300 basis-1/3 flex-1 dark:bg-neutral-400 dark:shadow-neutral-500">
+          <Image
+            className="relative mx-auto rounded-t-xl object-cover mt-3"
+            src={"/project1.png"}
+            alt="project-ecom"
+            width={600}
+            height={400}
+          />
+          <h4 className="py-4 text-green-900 font-semibold text-2xl">
+            Full-stack e-commerce site
+          </h4>
+          <p className="text-neutral-800 py-4">
+            ReactJS • React-Bootstrap • NodeJS • MongoDB • Mongoose • Express
+          </p>
+          <p className="text-neutral-800 py-4 text-md">
+            <a
+              className=" bg-gradient-to-r from-green-900 to-green-700 text-white px-2 py-2 font-medium rounded-3xl"
+              href="https://baltic-store.netlify.app/"
+              target="blank"
+            >
+              Site
+            </a>{" "}
+            <a
+              className="ml-2  bg-gradient-to-r from-green-900 to-green-700 text-white px-2 py-2 font-medium rounded-3xl"
+              href="https://github.com/TamlynSpringer/eCommerce_Client"
+              target="blank"
+            >
+              FE code
+            </a>{" "}
+            <a
+              className="ml-2  bg-gradient-to-r from-green-900 to-green-700 text-white px-2 py-2 font-medium rounded-3xl"
+              href="https://github.com/TamlynSpringer/eCommerce_Server"
+              target="blank"
+            >
+              BE code
+            </a>
+          </p>
+        </article>
+        <article className="px-2 text-center my-4 shadow-md rounded-xl bg-neutral-300 basis-1/3 flex-1 dark:bg-neutral-400 dark:shadow-neutral-500">
+          <Image
+            className="relative mx-auto rounded-t-xl object-cover mt-3"
+            src={"/project2.png"}
+            alt="project-blog"
+            width={600}
+            height={400}
+          />
+          <h4 className="py-4 text-green-900 font-semibold text-2xl">
+            Facts site
+          </h4>
+          <p className="text-neutral-800 py-4">
+            ReactJS • TypeScript • Vite • TailwindCSS
+          </p>
+          <p className="text-neutral-800 py-4 text-md">
+            <a
+              className="ml-2  bg-gradient-to-r from-green-900 to-green-700 text-white px-4 py-2 font-medium rounded-3xl"
+              href="https://planetary-facts-1337.netlify.app/"
+              target="blank"
+            >
+              Site
+            </a>{" "}
+            <a
+              className="ml-2  bg-gradient-to-r from-green-900 to-green-700 text-white px-4 py-2 font-medium rounded-3xl"
+              href="https://github.com/TamlynSpringer/planetary-facts-vite"
+              target="blank"
+            >
+              Code
+            </a>
+          </p>
+        </article>
+        <article className="px-2 text-center my-4 shadow-md rounded-xl bg-neutral-300 basis-1/3 flex-1 dark:bg-neutral-400 dark:shadow-neutral-500">
+          <Image
+            className="relative mx-auto rounded-t-xl object-cover mt-3"
+            src={"/project3.png"}
+            alt="project-blog"
+            width={600}
+            height={400}
+          />
+          <h4 className="py-4 text-green-900 font-semibold text-2xl">
+            Full-stack to-do app
+          </h4>
+          <p className="text-neutral-800 py-4">
+            ReactJS • TypeScript • NodeJS • Express • MongoDB • Mongoose
+          </p>
+          <p className="text-neutral-800 py-4 text-md">
+            <a
+              className="ml-2  bg-gradient-to-r from-green-900 to-green-700 text-white px-4 py-2 font-medium rounded-3xl"
+              href="https://ts-mern-todo.netlify.app/"
+              target="blank"
+            >
+              Site
+            </a>{" "}
+            <a
+              className="ml-2  bg-gradient-to-r from-green-900 to-green-700 text-white px-4 py-2 font-medium rounded-3xl"
+              href="https://github.com/TamlynSpringer/to-do-app-typescript-client"
+              target="blank"
+            >
+              FE Code
+            </a>{" "}
+            <a
+              className="ml-2  bg-gradient-to-r from-green-900 to-green-700 text-white px-4 py-2 font-medium rounded-3xl"
+              href="https://github.com/TamlynSpringer/to-do-app-typescript-server"
+              target="blank"
+            >
+              BE Code
+            </a>
+          </p>
+        </article>
+        <article className="px-2 text-center my-4 shadow-md rounded-xl bg-neutral-300 basis-1/3 flex-1 dark:bg-neutral-400 dark:shadow-neutral-500">
+          <Image
+            className="relative mx-auto rounded-t-xl mt-3"
+            src={"/project4.png"}
+            alt="project-gallery"
+            width={600}
+            height={400}
+          />
+          <h4 className="py-4 text-green-900 font-semibold text-2xl">
+            Image gallery & search
+          </h4>
+          <p className="text-neutral-800 py-4">
+            ReactJS • TailwindCSS • Unsplash API • Axios
+          </p>
+          <p className="text-neutral-800 py-4 text-md">
+            <a
+              className="ml-2  bg-gradient-to-r from-green-900 to-green-700 text-white px-4 py-2 font-medium rounded-3xl"
+              href="https://react-image-search-gallery.netlify.app/"
+              target="blank"
+            >
+              Site
+            </a>{" "}
+            <a
+              className="ml-2  bg-gradient-to-r from-green-900 to-green-700 text-white px-4 py-2 font-medium rounded-3xl"
+              href="https://github.com/TamlynSpringer/image-gallery"
+              target="blank"
+            >
+              Code
+            </a>
+          </p>
+        </article>
+        <article className="px-2 text-center my-4 shadow-md rounded-xl bg-neutral-300 basis-1/3 flex-1 dark:bg-neutral-400 dark:shadow-neutral-500">
+          <Image
+            className="relative mx-auto rounded-t-xl object-cover w-3/4 mt-3"
+            src={"/project5.png"}
+            alt="project-blog"
+            width={600}
+            height={400}
+          />
+          <h4 className="py-4 text-green-900 font-semibold text-2xl">
+            Goals mobile app
+          </h4>
+          <p className="text-neutral-800 py-4">React Native • Expo</p>
+          <p className="text-neutral-800 py-4 text-md">
+            <a
+              className="ml-2  bg-gradient-to-r from-green-900 to-green-700 text-white px-4 py-2 font-medium rounded-3xl"
+              href="https://github.com/TamlynSpringer/React-Native-goals-app"
+              target="blank"
+            >
+              Code
+            </a>
+          </p>
+        </article>
+        <article className="px-2 text-center my-4 shadow-md rounded-xl bg-neutral-300 basis-1/3 flex-1 dark:bg-neutral-400 dark:shadow-neutral-500">
+          <Image
+            className="relative mx-auto rounded-t-xl mt-3"
+            src={"/project6.png"}
+            alt="project-uno"
+            width={600}
+            height={400}
+          />
+          <h4 className="py-4 text-green-900 font-semibold text-2xl">
+            Multi-player card game
+          </h4>
+          <p className="text-neutral-800 py-4">
+            ReactJS • SocketIO • NodeJS • Express • Firebase
+          </p>
+          <p className="text-neutral-800 py-4 text-md">
+            {" "}
+            <a
+              className="ml-2  bg-gradient-to-r from-green-900 to-green-700 text-white px-4 py-2 font-medium rounded-3xl"
+              href="https://youtu.be/c_A_ctavXEY"
+              target="blank"
+            >
+              Walk-through
+            </a>{" "}
+            <a
+              className="ml-8  bg-gradient-to-r from-green-900 to-green-700 text-white px-4 py-2 font-medium rounded-3xl"
+              href="https://github.com/TamlynSpringer/SOUTH-UNO"
+            >
+              Code
+            </a>
+          </p>
+        </article>
+      </div>
+      {/* <h4 className="text-2xl hover:font-semibold text-neutral-900 font-medium px-1 py-6 text-left  dark:text-green-100">
+        <Link href="/projects">All projects</Link>
+      </h4> */}
+    </section>
+  );
+};
+
+export default Projects;

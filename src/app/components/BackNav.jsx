@@ -1,14 +1,13 @@
-import Image from "next/image"
-import Link from "next/link"
-import React from "react"
-import backL from "../../public/back-light.svg"
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
 const BackNav = () => {
   return (
     <nav className="py-4 px-2">
       <Link href="/#background">
         <Image
-          src={backL}
+          src={"/back-light.svg"}
           alt="Light back logo"
           width={"auto"}
           height={60}
@@ -18,4 +17,4 @@ const BackNav = () => {
   )
 }
 
-export default BackNav
+export default BackNav;
